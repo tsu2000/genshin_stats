@@ -84,7 +84,6 @@ def basic():
     
     basic_stats = dc.loc[dc.index, ['playable', 'rarity', 'vision', 'region', 'weapon_type']]
     
-    
     fig = go.Figure(data = [go.Table(columnwidth = [5, 2.5, 2.5, 2.5, 2.5, 2.5],
                                      header = dict(values = ['<b>Character<b>', 
                                                              '<b>Playable?<b>',
@@ -107,7 +106,7 @@ def basic():
                                                   align = ['left', 'center'],
                                                   font = dict(color = ['black', 'purple'], size = [14, 14]),
                                                   height = 25))])
-    fig.update_layout(height = 1400, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
+    fig.update_layout(height = 2000, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
     st.plotly_chart(fig, use_container_width = True)
     
     st.markdown('### View original source from csv file:')
@@ -291,7 +290,7 @@ def spas_stats():
                                                   align = ['left', 'center'],
                                                   font = dict(color = ['black', 'darkslateblue'], size = [14, 14]),
                                                   height = 25))])
-    fig.update_layout(height = 350, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
+    fig.update_layout(height = 500, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
     st.plotly_chart(fig, use_container_width = True)
 
     st.markdown('### View original source from csv file:')
@@ -395,7 +394,7 @@ def talent_stats():
                                                   align = ['left', 'center'],
                                                   font = dict(color = ['black', 'maroon'], size = [14, 14]),
                                                   height = 25))])
-    fig.update_layout(height = 225, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
+    fig.update_layout(height = 500, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
     st.plotly_chart(fig, use_container_width = True)
     st.markdown('*All Talent Books are available at all domains on Sunday.')
         
@@ -441,7 +440,7 @@ def trivia_stats():
                                                   align = ['left', 'center'],
                                                   font = dict(color = ['black', 'darkolivegreen'], size = [14, 14]),
                                                   height = 25))])
-    fig.update_layout(height = 350, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
+    fig.update_layout(height = 500, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
     st.plotly_chart(fig, use_container_width = True)
 
     st.markdown('### View original source from csv file:')
