@@ -290,7 +290,7 @@ def spas_stats():
                                                   align = ['left', 'center'],
                                                   font = dict(color = ['black', 'darkslateblue'], size = [14, 14]),
                                                   height = 25))])
-    fig.update_layout(height = 500, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
+    fig.update_layout(height = 700, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
     st.plotly_chart(fig, use_container_width = True)
 
     st.markdown('### View original source from csv file:')
