@@ -108,7 +108,7 @@ def basic():
                                                   font = dict(color = ['black', 'purple'], size = [14, 14]),
                                                   height = 25))])
     fig.update_layout(height = 1400, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
-    st.write(fig)
+    st.plotly_chart(fig, use_container_width = True)
     
     st.markdown('### View original source from csv file:')
     st.dataframe(basic_stats)
@@ -292,7 +292,7 @@ def spas_stats():
                                                   font = dict(color = ['black', 'darkslateblue'], size = [14, 14]),
                                                   height = 25))])
     fig.update_layout(height = 350, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
-    st.write(fig)
+    st.plotly_chart(fig, use_container_width = True)
 
     st.markdown('### View original source from csv file:')
     st.dataframe(asc_stats)
@@ -396,7 +396,7 @@ def talent_stats():
                                                   font = dict(color = ['black', 'maroon'], size = [14, 14]),
                                                   height = 25))])
     fig.update_layout(height = 225, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
-    st.write(fig)
+    st.plotly_chart(fig, use_container_width = True)
     st.markdown('*All Talent Books are available at all domains on Sunday.')
         
     st.markdown('### View original source from csv file:')
@@ -442,7 +442,7 @@ def trivia_stats():
                                                   font = dict(color = ['black', 'darkolivegreen'], size = [14, 14]),
                                                   height = 25))])
     fig.update_layout(height = 350, width = 700, margin = dict(l = 5, r = 5, t = 5, b = 5))
-    st.write(fig)
+    st.plotly_chart(fig, use_container_width = True)
 
     st.markdown('### View original source from csv file:')
     st.dataframe(triv_stats)
@@ -455,3 +455,4 @@ def trivia_stats():
     
 if __name__ == "__main__":
     main()
+    
